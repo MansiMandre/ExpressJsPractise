@@ -3,17 +3,36 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "node_modules/**",
+      ".git/**",
+      "logs/**"
+    ]
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "body-parser": "^1.20.3",
     "cors": "^2.8.5",
     "express": "^4.21.2",
+    "express-validator": "^7.2.1",
+    "luxon": "^3.5.0",
+    "mysql": "^2.18.1",
     "mysql2": "^3.14.0",
     "nodemon": "^3.1.9"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MansiMandre/ExpressJsPractise.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MansiMandre/ExpressJsPractise/issues"
+  },
+  "homepage": "https://github.com/MansiMandre/ExpressJsPractise#readme",
+  "description": ""
 }
